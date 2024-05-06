@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Formulário de Viagem"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da Viagem" />
+
+            <EditText
+                android:id="@+id/etNomeViagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o nome da viagem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Descrição da Viagem" />
+
+            <EditText
+                android:id="@+id/etDescricaoViagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite a descrição da viagem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Quantas pessoas?" />
+
+            <EditText
+                android:id="@+id/etQuantasPessoas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o número de pessoas"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Qual a duração da viagem?" />
+
+            <EditText
+                android:id="@+id/etDuracaoViagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o número de dias de viagem"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Local de Partida" />
+
+            <Spinner
+                android:id="@+id/spLocalPartida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecione o local de partida" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Local de Chegada" />
+
+            <Spinner
+                android:id="@+id/spLocalChegada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecione o local de chegada" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Como deseja se Locomover" />
+
+            <Spinner
+                android:id="@+id/spLocomocao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecione o meio de locomoção" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sectionGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total Km" />
+
+            <EditText
+                android:id="@+id/totalKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite a quilometragem"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Média Km/L" />
+
+            <EditText
+                android:id="@+id/mediaKmL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Média de quilometros por litro"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Custo médio por litro" />
+
+            <EditText
+                android:id="@+id/custoMedioLitro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe aqui"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Quantidade de veículos" />
+
+            <EditText
+                android:id="@+id/qtdVeiculos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe aqui"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/totalGasolina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total:"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sectionAviao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Custo Estimado por pessoa" />
+
+            <EditText
+                android:id="@+id/custo_pessoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe aqui"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Aluguel de veículo" />
+
+            <EditText
+                android:id="@+id/aluguel_veiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="informe aqui"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/totalPassagemAerea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total:"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="-------- Hospedagem -------- "
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Custo médio por noite" />
+
+        <EditText
+            android:id="@+id/custo_noite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informe aqui"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total de noites" />
+
+        <EditText
+            android:id="@+id/noites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informe aqui"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total de quartos" />
+
+        <EditText
+            android:id="@+id/quartos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informe aqui"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/totalHospedagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="-------- Refeições -------- "
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Custo estimado por refeição" />
+
+        <EditText
+            android:id="@+id/custo_refeicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informe aqui"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Refeições por dia" />
+
+        <EditText
+            android:id="@+id/refeicoes_dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="informe aqui"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/totalRefeicoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="-------- Entretenimento -------- "
+            android:textSize="20sp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/optionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Praia da Esperança - Custo: R$ 80,00" />
+
+                <CheckBox
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parque das Maravilhas - Custo: R$ 120,00" />
+
+                <CheckBox
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cinema dos Sonhos - Custo: R$ 50,00" />
+
+                <CheckBox
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurante Saboroso - Custo: R$ 150,00" />
+
+                <CheckBox
+                    android:id="@+id/option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Museu Histórico - Custo: R$ 40,00" />
+
+                <CheckBox
+                    android:id="@+id/option6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teatro Encantado - Custo: R$ 80,00" />
+
+                <CheckBox
+                    android:id="@+id/option7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Café Aconchegante - Custo: R$ 30,00" />
+
+                <CheckBox
+                    android:id="@+id/option8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pista de Patinação - Custo: R$ 70,00" />
+
+                <CheckBox
+                    android:id="@+id/option9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Montanha Aventureira - Custo: R$ 90,00" />
+
+                <CheckBox
+                    android:id="@+id/option10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clube Recreativo - Custo: R$ 60,00" />
+
+                <TextView
+                    android:id="@+id/totalEntertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Total:"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Cadastrar" />
+
+    </LinearLayout>
+</ScrollView>

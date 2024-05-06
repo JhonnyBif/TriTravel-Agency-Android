@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/total_km"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:hint="Total KM" />
+
+    <EditText
+        android:id="@+id/media_km_por_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_km"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
+        android:hint="Média Km/L" />
+
+    <EditText
+        android:id="@+id/custo_medio_litro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/media_km_por_l"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
+        android:hint="Custo médio por litro" />
+
+    <EditText
+        android:id="@+id/qtd_veiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custo_medio_litro"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:hint="Qtd Veículos" />
+
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qtd_veiculos"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Total: XXX"
+        android:textSize="16sp" />
+
+</RelativeLayout>
