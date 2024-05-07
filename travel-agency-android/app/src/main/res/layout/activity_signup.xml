@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cornsilk"
     android:orientation="vertical"
     tools:context=".SignupActivity">
     <!--  colocar background-->
@@ -31,6 +32,8 @@
                 android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:hint="Email"
                 android:padding="8dp" />
 
@@ -42,6 +45,8 @@
                 android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:hint="Senha"
                 android:inputType="textPassword"
                 android:padding="8dp" />
@@ -55,6 +60,8 @@
                 android:drawableLeft="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"
                 android:hint="Confirme a Senha"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:inputType="textPassword"
                 android:padding="8dp" />
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/cornsilk"
     tools:context=".LoginActivity">
         <!-- colocar background -->
     <ScrollView
@@ -17,7 +18,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 android:src="@drawable/logo"
                 android:layout_marginTop="100dp"/>
 
@@ -35,6 +36,7 @@
                     android:drawableLeft="@drawable/baseline_email_24"
                     android:drawablePadding="8dp"
                     android:hint="Email"
+                    android:textColor="@color/black"
                     android:padding="8dp"/>
                 <EditText
                     android:id="@+id/login_password"
@@ -45,6 +47,7 @@
                     android:drawableLeft="@drawable/baseline_lock_24"
                     android:drawablePadding="8dp"
                     android:hint="Senha"
+                    android:textColor="@color/black"
                     android:inputType="textPassword"
                     android:padding="8dp" />
                 <Button
@@ -53,6 +56,7 @@
                     android:layout_height="70dp"
                     android:layout_marginTop="30dp"
                     android:text="Conecte-se"
+                    android:backgroundTint="@color/pakistanGreen"
                     android:textSize="18sp"
                     app:cornerRadius="30dp" />
                 <TextView
@@ -63,7 +67,7 @@
                     android:layout_marginTop="14dp"
                     android:padding="8dp"
                     android:text="Ainda sem cadastro? Inscrever-se"
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/darkGreen"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>

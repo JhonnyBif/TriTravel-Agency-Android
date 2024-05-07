@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#009145</color>
+    <color name="darkGreen">#243116</color>
+    <color name="pakistanGreen">#283618</color>
+    <color name="darkMossGreen">#606C38</color>
+    <color name="cornsilk">#FFFAE0</color>
+    <color name="ecru">#E1BB80</color>
+    <color name="coyote">#875C35</color>
+    <color name="cofeNoir">#553922</color>
+    <color name="raisinBlack">#332A2A</color>
+
 </resources>
