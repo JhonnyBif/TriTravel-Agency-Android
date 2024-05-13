@@ -1,8 +1,10 @@
 package com.example.travel_agency_android;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -16,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.travel_agency_android.api.Api;
 import com.example.travel_agency_android.api.model.PostDTO;
@@ -60,9 +63,33 @@ public class TravelFormActivity extends AppCompatActivity {
     private EditText qtdPessoasEditText;
     private EditText duracaoViagemEditText;
 
-    final private List<String> locaisPartida = Arrays.asList("Criciuma", "Laguna", "Urussanga");
+    final private List<String> locaisPartida = Arrays.asList(
+            "Selecione um local",
+            "Florianópolis",
+            "Joinville",
+            "Blumenau",
+            "Itajaí",
+            "Chapecó",
+            "Criciúma",
+            "Balneário Camboriú",
+            "Lages",
+            "Jaraguá do Sul",
+            "São José"
+    );
 
-    final private List<String> locaisChegada = Arrays.asList("Criciuma", "Laguna", "Urussanga");
+    final private List<String> locaisChegada = Arrays.asList(
+            "Selecione um local",
+            "Florianópolis",
+            "Joinville",
+            "Blumenau",
+            "Itajaí",
+            "Chapecó",
+            "Criciúma",
+            "Balneário Camboriú",
+            "Lages",
+            "Jaraguá do Sul",
+            "São José"
+    );
 
     final private List<String> tipoLocomocao = Arrays.asList("Aviao", "Onibus", "Carro");
 
@@ -535,7 +562,36 @@ public class TravelFormActivity extends AppCompatActivity {
     }
 
     private void loadSpinnerLocalChegada() {
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, locaisChegada);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, locaisChegada) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView tv = (TextView) view;
+                if (position == 0) {
+                    tv.setTextColor(Color.GRAY);
+                } else {
+                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                }
+                return view;
+            }
+            @Override
+            public boolean isEnabled(int position) {
+                return position != 0;
+            }
+
+            @Override
+            public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                View view = super.getDropDownView(position, convertView, parent);
+                TextView tv = (TextView) view;
+                tv.setBackgroundColor(getResources().getColor(R.color.cornsilk));
+                if (position == 0) {
+                    tv.setTextColor(Color.GRAY);
+                } else {
+                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                }
+                return view;
+            }
+        };
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         Spinner spinner = findViewById(R.id.spLocalChegada);
@@ -556,7 +612,36 @@ public class TravelFormActivity extends AppCompatActivity {
     }
 
     private void loadSpinnerLocalPartida() {
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, locaisPartida);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, locaisPartida) {@Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View view = super.getView(position, convertView, parent);
+            TextView tv = (TextView) view;
+            if (position == 0) {
+                tv.setTextColor(Color.GRAY);
+            } else {
+                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+            }
+            return view;
+        }
+
+            @Override
+            public boolean isEnabled(int position) {
+                return position != 0;
+            }
+
+            @Override
+            public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                View view = super.getDropDownView(position, convertView, parent);
+                TextView tv = (TextView) view;
+                tv.setBackgroundColor(getResources().getColor(R.color.cornsilk));
+                if (position == 0) {
+                    tv.setTextColor(Color.GRAY);
+                } else {
+                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                }
+                return view;
+            }
+        };
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         Spinner spinner = findViewById(R.id.spLocalPartida);
