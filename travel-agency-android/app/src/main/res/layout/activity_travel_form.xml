@@ -453,7 +453,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="5dp"
-            android:background="@android:color/white">
+            android:background="@color/cornsilk">
 
             <LinearLayout
                 android:id="@+id/optionsLayout"
@@ -464,59 +464,69 @@
 
                 <CheckBox
                     android:id="@+id/option1"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Praia da Esperança - Custo: R$ 80,00" />
 
                 <CheckBox
                     android:id="@+id/option2"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Parque das Maravilhas - Custo: R$ 120,00" />
 
                 <CheckBox
                     android:id="@+id/option3"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cinema dos Sonhos - Custo: R$ 50,00" />
 
                 <CheckBox
                     android:id="@+id/option4"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Restaurante Saboroso - Custo: R$ 150,00" />
 
                 <CheckBox
                     android:id="@+id/option5"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Museu Histórico - Custo: R$ 40,00" />
 
                 <CheckBox
                     android:id="@+id/option6"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Teatro Encantado - Custo: R$ 80,00" />
 
                 <CheckBox
                     android:id="@+id/option7"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Café Aconchegante - Custo: R$ 30,00" />
 
                 <CheckBox
                     android:id="@+id/option8"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pista de Patinação - Custo: R$ 70,00" />
 
                 <CheckBox
                     android:id="@+id/option9"
+                    android:textColor="@color/darkGreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Montanha Aventureira - Custo: R$ 90,00" />
 
                 <CheckBox
+                    android:textColor="@color/darkGreen"
                     android:id="@+id/option10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

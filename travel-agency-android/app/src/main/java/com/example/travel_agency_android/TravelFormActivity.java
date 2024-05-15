@@ -91,7 +91,7 @@ public class TravelFormActivity extends AppCompatActivity {
             "São José"
     );
 
-    final private List<String> tipoLocomocao = Arrays.asList("Aviao", "Onibus", "Carro");
+    final private List<String> tipoLocomocao = Arrays.asList( "Selecione um Meio de Locomoçâo","Aviao", "Onibus", "Carro");
 
     private LinearLayout gasolinaSection;
     private LinearLayout aereoSection;
@@ -533,7 +533,36 @@ public class TravelFormActivity extends AppCompatActivity {
     }
 
     private void loadSpinnerLocomocao() {
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tipoLocomocao);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, tipoLocomocao) {
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View view = super.getView(position, convertView, parent);
+            TextView tv = (TextView) view;
+            if (position == 0) {
+                tv.setTextColor(Color.GRAY);
+            } else {
+                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+            }
+            return view;
+        }
+        @Override
+        public boolean isEnabled(int position) {
+            return position != 0;
+        }
+
+        @Override
+        public View getDropDownView(int position, View convertView, ViewGroup parent) {
+            View view = super.getDropDownView(position, convertView, parent);
+            TextView tv = (TextView) view;
+            tv.setBackgroundColor(getResources().getColor(R.color.cornsilk));
+            if (position == 0) {
+                tv.setTextColor(Color.GRAY);
+            } else {
+                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+            }
+            return view;
+        }
+    };
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         Spinner spinner = findViewById(R.id.spLocomocao);
@@ -543,9 +572,7 @@ public class TravelFormActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selectedItem = (String) parentView.getItemAtPosition(position);
-                // Faça algo com o item selecionado
-                if (selectedItem.equals("Aviao")) {
-
+                if (selectedItem.equals("Aviao") || selectedItem.equals("Onibus")) {
                     gasolinaSection.setVisibility(View.GONE);
                     aereoSection.setVisibility(View.VISIBLE);
                 } else {

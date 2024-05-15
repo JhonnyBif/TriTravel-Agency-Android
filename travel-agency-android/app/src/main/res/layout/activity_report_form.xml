@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="15dp"
     android:background="@color/cornsilk"
     android:fillViewport="true">
 
@@ -17,6 +16,7 @@
         tools:context=".MainActivity">
 
         <TextView
+            android:textColor="@color/darkGreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -32,6 +32,7 @@
 
             <TextView
                 android:id="@+id/travel_name"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -41,6 +42,7 @@
 
             <TextView
                 android:id="@+id/travel_description"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -49,6 +51,7 @@
 
             <TextView
                 android:id="@+id/people_qtd"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -56,6 +59,7 @@
 
             <TextView
                 android:id="@+id/departure_location"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -63,6 +67,7 @@
 
             <TextView
                 android:id="@+id/arrival_location"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -70,6 +75,7 @@
 
             <TextView
                 android:id="@+id/transportation_mode"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -77,6 +83,7 @@
 
             <TextView
                 android:id="@+id/total_locomotion"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -84,6 +91,7 @@
 
             <TextView
                 android:id="@+id/total_accommodation"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -91,6 +99,7 @@
 
             <TextView
                 android:id="@+id/total_meal"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -98,6 +107,7 @@
 
             <TextView
                 android:id="@+id/total_entertainment"
+                android:textColor="@color/darkGreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
