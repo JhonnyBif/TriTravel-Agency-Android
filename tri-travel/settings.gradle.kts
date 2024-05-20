@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "travel-agency-android"
+rootProject.name = "tri-travel"
 include(":app")
