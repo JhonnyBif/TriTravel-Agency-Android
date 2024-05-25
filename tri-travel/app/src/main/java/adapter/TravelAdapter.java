@@ -14,6 +14,7 @@ import com.example.travel_agency_android.DatabaseHelper;
 import com.example.travel_agency_android.MainActivity;
 import com.example.travel_agency_android.R;
 import com.example.travel_agency_android.ReportFormActivity;
+import com.example.travel_agency_android.TravelFormActivity;
 
 import java.util.ArrayList;
 
@@ -64,41 +65,45 @@ public class TravelAdapter extends BaseAdapter {
         TextView description = view.findViewById(R.id.travelDescription);
         description.setText(travel.getDescription());
 
-        Button btnEdit = view.findViewById(R.id.btnEdit);
-        Button btnDelete = view.findViewById(R.id.btnDelete);
+//        Button btnEdit = view.findViewById(R.id.btnEdit);
+//        Button btnDelete = view.findViewById(R.id.btnDelete);
         Button btnViewReport = view.findViewById(R.id.btnViewReport);
 
-        btnEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
+//        btnEdit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(activity, TravelFormActivity.class);
+//                intent.putExtra("travelId", travel.getId());
+//                activity.startActivity(intent);
+//            }
+//        });
 
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new AlertDialog.Builder(activity)
-                        .setTitle("Excluir Viagem")
-                        .setMessage("Tem certeza de que deseja excluir este item?")
-                        .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                databaseHelper.deleteTravelById(travel.getId().intValue());
-                                travelList.remove(travel);
-                                notifyDataSetChanged();
+//        btnDelete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                new AlertDialog.Builder(activity)
+//                        .setTitle("Excluir Viagem")
+//                        .setMessage("Tem certeza de que deseja excluir este item?")
+//                        .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                databaseHelper.deleteTravelById(travel.getId().intValue());
+//                                travelList.remove(travel);
+//                                notifyDataSetChanged();
+//
+//                                Intent intent = new Intent(activity, MainActivity.class);
+//                                activity.startActivity(intent);
+//                            }
+//                        })
+//                        .setNegativeButton("Não", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                            }
+//                        })
+//                        .show();
+//            }
+//        });
 
-                                Intent intent = new Intent(activity, MainActivity.class);
-                                activity.startActivity(intent);
-                            }
-                        })
-                        .setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                            }
-                        })
-                        .show();
-            }
-        });
 
         btnViewReport.setOnClickListener(new View.OnClickListener() {
             @Override
