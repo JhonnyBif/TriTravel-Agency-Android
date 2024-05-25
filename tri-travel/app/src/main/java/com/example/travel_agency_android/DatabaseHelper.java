@@ -5,9 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -412,6 +414,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    public int updateTravel(TravelModelDB travel) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        Log.i("aaaa", travel.getId() + "id");
+        contentValues.put(TravelsTable.COL_ID, travel.getId());
+        contentValues.put(TravelsTable.COL_TRAVEL_NAME, travel.getTravelName());
+        contentValues.put(TravelsTable.COL_DESCRIPTION, travel.getDescription());
+        contentValues.put(TravelsTable.COL_QUANTITY_OF_PEOPLE, travel.getNumberOfPeople());
+        contentValues.put(TravelsTable.COL_TRAVEL_DURATION, travel.getTravelDuration());
+        contentValues.put(TravelsTable.COL_DEPARTURE_LOCATION, travel.getDepartureLocation());
+        contentValues.put(TravelsTable.COL_ARRIVAL_LOCATION, travel.getArrivalLocation());
+        contentValues.put(TravelsTable.COL_TRANSPORTATION_MODE, travel.getTransportationMode());
+
+        String whereClause = TravelsTable.COL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(travel.getId()) };
+
+        int result = MyDatabase.update(TravelsTable.TABLE_NAME, contentValues, whereClause, whereArgs);
+        return result;
+    }
+
     public boolean insertGasoline(GasolineModelDB gasoline) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -424,6 +446,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(GasolineTable.COL_TOTAL, gasoline.getTotal());
 
         long result = MyDatabase.insert(GasolineTable.TABLE_NAME, null, contentValues);
+        return result != -1;
+    }
+    public boolean updateGasoline(GasolineModelDB gasoline) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(GasolineTable.COL_TRAVEL_ID, gasoline.getTravelId());
+        contentValues.put(GasolineTable.COL_TOTAL_KM, gasoline.getTotalKm());
+        contentValues.put(GasolineTable.COL_MEDIA_KM_LITRES, gasoline.getAverageKmPerLiter());
+        contentValues.put(GasolineTable.COL_AVERAGE_COST_PER_LITER, gasoline.getAverageCostPerLiter());
+        contentValues.put(GasolineTable.COL_NUMBER_OF_VEHICLES, gasoline.getNumberOfVehicles());
+        contentValues.put(GasolineTable.COL_TOTAL, gasoline.getTotal());
+
+        String whereClause = AirfareTable.COL_TRAVEL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(gasoline.getTravelId()) };
+
+        long result = MyDatabase.update(GasolineTable.TABLE_NAME, contentValues,  whereClause, whereArgs);
         return result != -1;
     }
 
@@ -440,6 +479,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result != -1;
     }
 
+    public boolean updateAirfare(AirfareModelDB airfare) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(AirfareTable.COL_TRAVEL_ID, airfare.getTravelId());
+        contentValues.put(AirfareTable.COL_ESTIMATED_COST_PER_PERSON, airfare.getEstimatedCostPerPerson());
+        contentValues.put(AirfareTable.COL_VEHICLE_RENTAL, airfare.getVehicleRental());
+        contentValues.put(AirfareTable.COL_TOTAL, airfare.getTotal());
+
+        String whereClause = AirfareTable.COL_TRAVEL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(airfare.getTravelId()) };
+
+        long result = MyDatabase.update(AirfareTable.TABLE_NAME, contentValues,  whereClause, whereArgs);
+        return result != -1;
+    }
+
     public boolean insertMeal(MealModelDB meal) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -450,6 +505,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(MealsTable.COL_TOTAL, meal.getTotal());
 
         long result = MyDatabase.insert(MealsTable.TABLE_NAME, null, contentValues);
+        return result != -1;
+    }
+
+    public boolean updateMeal(MealModelDB meal) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(MealsTable.COL_TRAVEL_ID, meal.getTravelId());
+        contentValues.put(MealsTable.COL_MEAL_COST, meal.getMealCost());
+        contentValues.put(MealsTable.COL_MEALS_PER_DAY, meal.getMealsPerDay());
+        contentValues.put(MealsTable.COL_TOTAL, meal.getTotal());
+        String whereClause = AirfareTable.COL_TRAVEL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(meal.getTravelId()) };
+
+
+        long result = MyDatabase.update(MealsTable.TABLE_NAME, contentValues,  whereClause, whereArgs);
         return result != -1;
     }
 
@@ -464,6 +535,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(AccommodationTable.COL_TOTAL, accommodation.getTotal());
 
         long result = database.insert(AccommodationTable.TABLE_NAME, null, contentValues);
+        return result != -1;
+    }
+
+    public boolean updateAccommodation(AccommodationModelDB accommodation) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(AccommodationTable.COL_TRAVEL_ID, accommodation.getTravelId());
+        contentValues.put(AccommodationTable.COL_COST_PER_NIGHT, accommodation.getEstimatedCostPerPerson());
+        contentValues.put(AccommodationTable.COL_TOTAL_OF_NIGHTS, accommodation.getTotalNights());
+        contentValues.put(AccommodationTable.COL_TOTAL_OF_ROOMS, accommodation.getTotalRooms());
+        contentValues.put(AccommodationTable.COL_TOTAL, accommodation.getTotal());
+        String whereClause = AirfareTable.COL_TRAVEL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(accommodation.getTravelId()) };
+
+        long result = database.update(AccommodationTable.TABLE_NAME, contentValues,  whereClause, whereArgs);
         return result != -1;
     }
 
@@ -485,6 +572,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(EntertainmentTable.COL_TOTAL, entertainment.getTotal());
 
         long result = database.insert(EntertainmentTable.TABLE_NAME, null, contentValues);
+        return result != -1;
+    }
+    public boolean updateEntertainment(EntertainmentModelDB entertainment) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(EntertainmentTable.COL_TRAVEL_ID, entertainment.getTravelId());
+        contentValues.put(EntertainmentTable.COL_OPTION_1, entertainment.getOption1());
+        contentValues.put(EntertainmentTable.COL_OPTION_2, entertainment.getOption2());
+        contentValues.put(EntertainmentTable.COL_OPTION_3, entertainment.getOption3());
+        contentValues.put(EntertainmentTable.COL_OPTION_4, entertainment.getOption4());
+        contentValues.put(EntertainmentTable.COL_OPTION_5, entertainment.getOption5());
+        contentValues.put(EntertainmentTable.COL_OPTION_6, entertainment.getOption6());
+        contentValues.put(EntertainmentTable.COL_OPTION_7, entertainment.getOption7());
+        contentValues.put(EntertainmentTable.COL_OPTION_8, entertainment.getOption8());
+        contentValues.put(EntertainmentTable.COL_OPTION_9, entertainment.getOption9());
+        contentValues.put(EntertainmentTable.COL_OPTION_10, entertainment.getOption10());
+        contentValues.put(EntertainmentTable.COL_TOTAL, entertainment.getTotal());
+        String whereClause = AirfareTable.COL_TRAVEL_ID + " = ?";
+        String[] whereArgs = { String.valueOf(entertainment.getTravelId()) };
+
+        long result = database.update(EntertainmentTable.TABLE_NAME, contentValues,  whereClause, whereArgs);
         return result != -1;
     }
 }

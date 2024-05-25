@@ -70,42 +70,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showAddDialog() {
-//        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-//        LayoutInflater inflater = getLayoutInflater();
-//        View dialogView = inflater.inflate(R.layout.dialog_layout, null);
-//        dialogBuilder.setView(dialogView);
-//
-//        final EditText editTextNome = dialogView.findViewById(R.id.editTextNome);
-//        final EditText editTextTelefone = dialogView.findViewById(R.id.editTextTelefone);
-//
-//        dialogBuilder.setPositiveButton("Salvar", new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialog, int which) {
-//                String nome = editTextNome.getText().toString();
-//                String telefone = editTextTelefone.getText().toString();
-//
-//                ContatoModel contato = new ContatoModel();
-//
-//                contato.setNome(nome);
-//                contato.setTelefone(telefone);
-//
-//                contatos.add(contato);
-//
-//                adapter.notifyDataSetChanged();
-//
-//                dialog.dismiss();
-//            }
-//        });
-//
-//        dialogBuilder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialog, int which) {
-//                dialog.dismiss();
-//            }
-//        });
-//
-//        AlertDialog alertDialog = dialogBuilder.create();
-//        alertDialog.show();
-    }
+
 }
