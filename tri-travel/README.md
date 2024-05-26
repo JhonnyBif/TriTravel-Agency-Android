@@ -1,2 +1,2 @@
-# travel-agency-android
-Project developed in the mobile devices classes of computer science course
+# TriTravel
+## Projeto para disciplina de Dispositiveis Moveis, no qual trata-se de um app de viagens
