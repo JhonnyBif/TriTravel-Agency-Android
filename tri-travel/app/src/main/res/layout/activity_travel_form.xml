@@ -15,7 +15,7 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -33,23 +33,23 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_height="wrap_content"
                 android:text="Nome da Viagem" />
 
             <EditText
                 android:id="@+id/etNomeViagem"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite o nome da viagem" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -57,17 +57,17 @@
 
             <EditText
                 android:id="@+id/etDescricaoViagem"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite a descrição da viagem" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -75,18 +75,18 @@
 
             <EditText
                 android:id="@+id/etQuantasPessoas"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite o número de pessoas"
                 android:inputType="number" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -94,11 +94,11 @@
 
             <EditText
                 android:id="@+id/etDuracaoViagem"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite o número de dias de viagem"
@@ -106,7 +106,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Local de Partida" />
@@ -118,7 +118,7 @@
                 android:hint="Selecione o local de partida" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -132,7 +132,7 @@
                 android:hint="Selecione o local de chegada" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -155,7 +155,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -163,18 +163,18 @@
 
             <EditText
                 android:id="@+id/totalKm"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite a quilometragem"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -182,18 +182,18 @@
 
             <EditText
                 android:id="@+id/mediaKmL"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Média de quilometros por litro"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -201,18 +201,18 @@
 
             <EditText
                 android:id="@+id/custoMedioLitro"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="informe aqui"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -220,18 +220,18 @@
 
             <EditText
                 android:id="@+id/qtdVeiculos"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="informe aqui"
                 android:inputType="number" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:id="@+id/totalGasolina"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -258,18 +258,18 @@
 
             <EditText
                 android:id="@+id/custo_pessoa"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="informe aqui"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -277,18 +277,18 @@
 
             <EditText
                 android:id="@+id/aluguel_veiculo"
-                android:textColor="@color/darkGreen"
-                android:background="@drawable/lavender_border"
+                android:textColor="@color/raisinBlack"
+                android:background="@drawable/darkgreen_border"
                 android:padding="8dp"
                 android:layout_marginTop="1dp"
-                android:textColorHint="@color/darkGreen"
+                android:textColorHint="@color/raisinBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="informe aqui"
                 android:inputType="numberDecimal" />
 
             <TextView
-                android:textColor="@color/darkGreen"
+                android:textColor="@color/raisinBlack"
                 android:id="@+id/totalPassagemAerea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -298,16 +298,16 @@
         </LinearLayout>
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="20dp"
-            android:text="-------- Hospedagem -------- "
+            android:text=" Hospedagem  "
             android:textSize="20sp" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_height="wrap_content"
@@ -317,18 +317,18 @@
         <EditText
             android:id="@+id/custo_noite"
             android:layout_marginHorizontal="5dp"
-            android:textColor="@color/darkGreen"
-            android:background="@drawable/lavender_border"
+            android:textColor="@color/raisinBlack"
+            android:background="@drawable/darkgreen_border"
             android:padding="8dp"
             android:layout_marginTop="1dp"
-            android:textColorHint="@color/darkGreen"
+            android:textColorHint="@color/raisinBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="informe aqui"
             android:inputType="numberDecimal" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
@@ -338,18 +338,18 @@
         <EditText
             android:id="@+id/noites"
             android:layout_marginHorizontal="5dp"
-            android:textColor="@color/darkGreen"
-            android:background="@drawable/lavender_border"
+            android:textColor="@color/raisinBlack"
+            android:background="@drawable/darkgreen_border"
             android:padding="8dp"
             android:layout_marginTop="1dp"
-            android:textColorHint="@color/darkGreen"
+            android:textColorHint="@color/raisinBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="informe aqui"
             android:inputType="number" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -359,18 +359,18 @@
         <EditText
             android:layout_marginHorizontal="5dp"
             android:id="@+id/quartos"
-            android:textColor="@color/darkGreen"
-            android:background="@drawable/lavender_border"
+            android:textColor="@color/raisinBlack"
+            android:background="@drawable/darkgreen_border"
             android:padding="8dp"
             android:layout_marginTop="1dp"
-            android:textColorHint="@color/darkGreen"
+            android:textColorHint="@color/raisinBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="informe aqui"
             android:inputType="number" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:id="@+id/totalHospedagem"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
@@ -380,16 +380,16 @@
             android:textSize="20sp" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="-------- Refeições -------- "
+            android:text=" Refeições  "
             android:textSize="20sp" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -399,18 +399,18 @@
         <EditText
             android:layout_marginHorizontal="5dp"
             android:id="@+id/custo_refeicao"
-            android:textColor="@color/darkGreen"
-            android:background="@drawable/lavender_border"
+            android:textColor="@color/raisinBlack"
+            android:background="@drawable/darkgreen_border"
             android:padding="8dp"
             android:layout_marginTop="1dp"
-            android:textColorHint="@color/darkGreen"
+            android:textColorHint="@color/raisinBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="informe aqui"
             android:inputType="numberDecimal" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -420,18 +420,18 @@
         <EditText
             android:layout_marginHorizontal="5dp"
             android:id="@+id/refeicoes_dia"
-            android:textColor="@color/darkGreen"
-            android:background="@drawable/lavender_border"
+            android:textColor="@color/raisinBlack"
+            android:background="@drawable/darkgreen_border"
             android:padding="8dp"
             android:layout_marginTop="1dp"
-            android:textColorHint="@color/darkGreen"
+            android:textColorHint="@color/raisinBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="informe aqui"
             android:inputType="number" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:id="@+id/totalRefeicoes"
             android:layout_width="wrap_content"
@@ -441,12 +441,12 @@
             android:textSize="20sp" />
 
         <TextView
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="-------- Entretenimento -------- "
+            android:text=" Adicionais  "
             android:textSize="20sp" />
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -464,76 +464,76 @@
 
                 <CheckBox
                     android:id="@+id/option1"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praia da Esperança - Custo: R$ 80,00" />
+                    android:text="Carrossel Animado - Custo: R$ 80,00" />
 
                 <CheckBox
                     android:id="@+id/option2"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Parque das Maravilhas - Custo: R$ 120,00" />
+                    android:text="Roda Gigante - Custo: R$ 120,00" />
 
                 <CheckBox
                     android:id="@+id/option3"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cinema dos Sonhos - Custo: R$ 50,00" />
+                    android:text="Cinema 8d - Custo: R$ 50,00" />
 
                 <CheckBox
                     android:id="@+id/option4"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Restaurante Saboroso - Custo: R$ 150,00" />
+                    android:text="Espaço Gourmet - Custo: R$ 150,00" />
 
                 <CheckBox
                     android:id="@+id/option5"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Museu Histórico - Custo: R$ 40,00" />
+                    android:text="História dos Carros - Custo: R$ 40,00" />
 
                 <CheckBox
                     android:id="@+id/option6"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Teatro Encantado - Custo: R$ 80,00" />
+                    android:text="Teatro - Custo: R$ 80,00" />
 
                 <CheckBox
                     android:id="@+id/option7"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Café Aconchegante - Custo: R$ 30,00" />
+                    android:text="Hard Rock Café - Custo: R$ 30,00" />
 
                 <CheckBox
                     android:id="@+id/option8"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pista de Patinação - Custo: R$ 70,00" />
+                    android:text="Kart - Custo: R$ 70,00" />
 
                 <CheckBox
                     android:id="@+id/option9"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Montanha Aventureira - Custo: R$ 90,00" />
+                    android:text="Trilha para Cachoeira - Custo: R$ 90,00" />
 
                 <CheckBox
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:id="@+id/option10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clube Recreativo - Custo: R$ 60,00" />
+                    android:text="Balada - Custo: R$ 60,00" />
 
                 <TextView
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:id="@+id/totalEntertainment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -553,7 +553,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:text="Cadastrar" />
+            android:text="Criar" />
 
     </LinearLayout>
 </ScrollView>

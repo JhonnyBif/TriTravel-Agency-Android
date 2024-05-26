@@ -102,7 +102,7 @@ public class ReportFormActivity extends AppCompatActivity {
                 totalMealTextView.setText("Gastos com Alimentação: " + formatCurrency(meal.getTotal()));
 
                 TextView totalEntertainmentTextView = findViewById(R.id.total_entertainment);
-                totalEntertainmentTextView.setText("Gastos com Entretenimento: " + formatCurrency(entertainment.getTotal()));
+                totalEntertainmentTextView.setText("Gastos com Adicionais: " + formatCurrency(entertainment.getTotal()));
 
                 Button btnEdit = findViewById(R.id.btnEdit);
                 Button btnDelete = findViewById(R.id.btnDelete);

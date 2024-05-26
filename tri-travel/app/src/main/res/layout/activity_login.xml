@@ -32,7 +32,7 @@
                     android:layout_width="350dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/darkgreen_border"
                     android:drawableLeft="@drawable/baseline_email_24"
                     android:drawablePadding="8dp"
                     android:hint="Email"
@@ -43,7 +43,7 @@
                     android:layout_width="350dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/darkgreen_border"
                     android:drawableLeft="@drawable/baseline_lock_24"
                     android:drawablePadding="8dp"
                     android:hint="Senha"
@@ -55,7 +55,7 @@
                     android:layout_width="350dp"
                     android:layout_height="70dp"
                     android:layout_marginTop="30dp"
-                    android:text="Conecte-se"
+                    android:text="Realizar login"
                     android:backgroundTint="@color/pakistanGreen"
                     android:textSize="18sp"
                     app:cornerRadius="30dp" />
@@ -67,7 +67,7 @@
                     android:layout_marginTop="14dp"
                     android:padding="8dp"
                     android:text="Ainda sem cadastro? Inscrever-se"
-                    android:textColor="@color/darkGreen"
+                    android:textColor="@color/raisinBlack"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
