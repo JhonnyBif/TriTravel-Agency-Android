@@ -29,7 +29,7 @@
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/lavender_border"
+                android:background="@drawable/darkgreen_border"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
                 android:textColorHint="@color/black"
@@ -42,7 +42,7 @@
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/lavender_border"
+                android:background="@drawable/darkgreen_border"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"
@@ -56,7 +56,7 @@
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/lavender_border"
+                android:background="@drawable/darkgreen_border"
                 android:drawableLeft="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"
                 android:hint="Confirme a Senha"
@@ -81,8 +81,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
-                android:text="Já é um usuário? Conecte-se"
-                android:textColor="@color/lavender"
+                android:text="Já é um usuário? Realizar login"
+                android:textColor="@color/raisinBlack"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>

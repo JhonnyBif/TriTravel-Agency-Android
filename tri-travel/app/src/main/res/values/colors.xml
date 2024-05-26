@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#58A337</color>
-    <color name="purple_500">#00C55F</color>
-    <color name="purple_700">#009044</color>
-    <color name="teal_200">#E3E3E3</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="lavender">#009145</color>
     <color name="darkGreen">#243116</color>
     <color name="pakistanGreen">#283618</color>
     <color name="darkMossGreen">#606C38</color>

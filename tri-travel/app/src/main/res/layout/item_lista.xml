@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/travelId"
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/travelName"
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -41,7 +41,7 @@
 
         <TextView
             android:id="@+id/travelDescription"
-            android:textColor="@color/darkGreen"
+            android:textColor="@color/raisinBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="2dp"
-            android:text="Ver Relatório"
+            android:text="Ir Para detalhes"
             android:singleLine="true"
             android:textSize="10sp" />
     </LinearLayout>

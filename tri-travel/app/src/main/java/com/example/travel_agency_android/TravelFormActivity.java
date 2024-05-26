@@ -192,7 +192,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -204,7 +204,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -241,7 +241,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -253,7 +253,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -290,7 +290,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -302,7 +302,7 @@ public class TravelFormActivity extends AppCompatActivity {
                         if (position == 0) {
                             tv.setTextColor(Color.GRAY);
                         } else {
-                            tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                            tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                         }
                         return view;
                     }
@@ -890,7 +890,7 @@ public class TravelFormActivity extends AppCompatActivity {
             if (position == 0) {
                 tv.setTextColor(Color.GRAY);
             } else {
-                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
             }
             return view;
         }
@@ -907,7 +907,7 @@ public class TravelFormActivity extends AppCompatActivity {
             if (position == 0) {
                 tv.setTextColor(Color.GRAY);
             } else {
-                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
             }
             return view;
         }
@@ -947,7 +947,7 @@ public class TravelFormActivity extends AppCompatActivity {
                 if (position == 0) {
                     tv.setTextColor(Color.GRAY);
                 } else {
-                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                    tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                 }
                 return view;
             }
@@ -964,7 +964,7 @@ public class TravelFormActivity extends AppCompatActivity {
                 if (position == 0) {
                     tv.setTextColor(Color.GRAY);
                 } else {
-                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                    tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                 }
                 return view;
             }
@@ -996,7 +996,7 @@ public class TravelFormActivity extends AppCompatActivity {
             if (position == 0) {
                 tv.setTextColor(Color.GRAY);
             } else {
-                tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
             }
             return view;
         }
@@ -1014,7 +1014,7 @@ public class TravelFormActivity extends AppCompatActivity {
                 if (position == 0) {
                     tv.setTextColor(Color.GRAY);
                 } else {
-                    tv.setTextColor(getResources().getColor(R.color.darkGreen));
+                    tv.setTextColor(getResources().getColor(R.color.darkMossGreen));
                 }
                 return view;
             }

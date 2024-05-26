@@ -40,7 +40,7 @@ public class SignupActivity extends AppCompatActivity {
                                 Toast.makeText(SignupActivity.this, "Falha na inscrição!", Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            Toast.makeText(SignupActivity.this, "Usuário já existe! Por favor conecte-se", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "Usuário já existe! Por favor Realizar login", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         Toast.makeText(SignupActivity.this, "Senha inválida!", Toast.LENGTH_SHORT).show();
