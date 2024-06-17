@@ -26,20 +26,15 @@
     </LinearLayout>
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        >
         <ListView
             android:id="@+id/travelList"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:layout_height="match_parent"
             android:dividerHeight="10.0sp"
             android:divider="#FFFFFF"
             tools:ignore="MissingConstraints" />
-    </ScrollView>
+
 
 
 

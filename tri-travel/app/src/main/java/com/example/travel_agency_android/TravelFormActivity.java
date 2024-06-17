@@ -21,6 +21,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.travel_agency_android.api.Api;
+import com.example.travel_agency_android.api.model.PostDTO;
+import com.example.travel_agency_android.api.model.Resposta;
+import com.example.travel_agency_android.api.model.ViagemCustoAereo;
+import com.example.travel_agency_android.api.model.ViagemCustoGasolina;
+import com.example.travel_agency_android.api.model.ViagemCustoHospedagem;
+import com.example.travel_agency_android.api.model.ViagemCustoRefeicao;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Arrays;
@@ -62,20 +70,30 @@ public class TravelFormActivity extends AppCompatActivity {
 
     final private List<String> locaisPartida = Arrays.asList(
             "Selecione um local",
-            "Florianópolis",
-            "Joinville",
-            "Blumenau",
-            "Itajaí",
-            "Chapecó",
-            "Criciúma",
-            "Balneário Camboriú",
-            "Lages",
-            "Jaraguá do Sul",
-            "São José"
+            "Porto Alegre",
+            "Gramado",
+            "Canela",
+            "Torres",
+            "Ametista do Sul",
+            "Pinto Bandeira",
+            "Bento Gonçalves",
+            "Caxias do Sul",
+            "Pelotas",
+            "Uruguaiana"
     );
 
     final private List<String> locaisChegada = Arrays.asList(
             "Selecione um local",
+            "Porto Alegre",
+            "Gramado",
+            "Canela",
+            "Torres",
+            "Ametista do Sul",
+            "Pinto Bandeira",
+            "Bento Gonçalves",
+            "Caxias do Sul",
+            "Pelotas",
+            "Uruguaiana",
             "Florianópolis",
             "Joinville",
             "Blumenau",
@@ -418,6 +436,59 @@ public class TravelFormActivity extends AppCompatActivity {
                             totalViagem += calculateTotalViagem();
                             int qtdPessoas = Integer.parseInt(qtdPessoasEditText.getText().toString());
                             int duracaoViagem = Integer.parseInt(duracaoViagemEditText.getText().toString());
+                            ViagemCustoAereo custoAereo = new ViagemCustoAereo(
+                                    getDoubleValueFromEditText(R.id.custo_pessoa),
+                                    getDoubleValueFromEditText(R.id.aluguel_veiculo)
+                            );
+
+                            ViagemCustoGasolina custoGasolina = new ViagemCustoGasolina(
+                                    getDoubleValueFromEditText(R.id.totalKm),
+                                    getDoubleValueFromEditText(R.id.mediaKmL),
+                                    getDoubleValueFromEditText(R.id.custoMedioLitro),
+                                    getDoubleValueFromEditText(R.id.qtdVeiculos)
+                            );
+
+                            ViagemCustoHospedagem custoHospedagem = new ViagemCustoHospedagem(
+                                    getDoubleValueFromEditText(R.id.custo_noite),
+                                    getIntValueFromEditText(R.id.noites),
+                                    getIntValueFromEditText(R.id.quartos)
+                            );
+
+                            ViagemCustoRefeicao custoRefeicao = new ViagemCustoRefeicao(
+                                    getDoubleValueFromEditText(R.id.custo_refeicao),
+                                    getIntValueFromEditText(R.id.refeicoes_dia)
+                            );
+
+                            PostDTO dtoEnviar = new PostDTO(
+                                    qtdPessoas,
+                                    duracaoViagem,
+                                    totalViagem,
+                                    ((Spinner) findViewById(R.id.spLocalChegada)).getSelectedItem().toString()
+                            );
+
+                            dtoEnviar.setViagemCustoAereo(custoAereo);
+                            dtoEnviar.setViagemCustoGasolina(custoGasolina);
+                            dtoEnviar.setViagemCustoHospedagem(custoHospedagem);
+                            dtoEnviar.setViagemCustoRefeicao(custoRefeicao);
+
+                            Api.postViagem(dtoEnviar, new Callback<Resposta>() {
+                                @Override
+                                public void onResponse(Call<Resposta> call, Response<Resposta> response) {
+                                    if (response != null && response.isSuccessful()) {
+
+                                        Resposta r = response.body();
+                                        r.getDado();
+                                        r.getMensagem();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(Call<Resposta> call, Throwable t) {
+                                    Toast.makeText(TravelFormActivity.this, "Ocorreu um erro ao enviar.", Toast.LENGTH_SHORT).show();
+
+                                    t.printStackTrace();
+                                }
+                            });
 
                             Toast.makeText(TravelFormActivity.this, "Viagem registrada com sucesso.", Toast.LENGTH_SHORT).show();
 
